@@ -1,0 +1,85 @@
+const styles = {
+  '--color-avatar-bg': '#1d2021',
+  '--color-avatar-text': '#282828',
+  '--color-background': '#3c3836',
+  '--color-border': '#504945',
+  
+  '--color-button-bg': '#b8bb26',
+  '--color-button-bg-dim': '#98971a',
+  '--color-button-text': '#282828',
+  
+  '--color-chat-bg': '',
+  '--color-chat-border': '#504945',
+  '--color-chat-shadow': '#282828',
+  '--color-chat-text': '#fbf1c7',
+  '--color-chat-text-dim': '#a89984',
+  
+  '--color-danger': '#cc241d',
+  
+  '--color-footer-bg': '#282828',
+  '--color-footer-text': '#a89984',
+  '--color-footer-text-bright': '#fbf1c7',
+  
+  '--color-header-bg': '#fe8019',
+  '--color-header-shadow': '#d65d0e',
+  '--color-header-text': '#282828',
+  '--color-header-text-bright': '',
+  
+  '--color-link': '#b8bb26',
+  '--color-logo': '',
+  
+  '--color-message-permalink': '#b16286',
+  
+  '--color-modal-dialog-bg': '#282828',
+  '--color-modal-overlay-bg': '#282828',
+  '--color-modal-text-dim': '#a89984',
+  '--color-modal-text': '#fbf1c7',
+  
+  '--color-popout-bg': '#1d2021',
+  '--color-popout-bg-inverse': '',
+  '--color-popout-border': '#504945',
+  '--color-popout-shadow': '#282828',
+  '--color-popout-text': '#fbf1c7',
+  '--color-popout-text-inverse': '',
+  '--color-popout-tooltip-bg': '#282828',
+  '--color-popout-tooltip-text': '#fbf1c7',
+  
+  '--color-shadow': '#282828',
+  '--color-shadow-dim': '',
+  
+  '--color-text-bright': '',
+  '--color-text-dim': '#a89984',
+  '--color-text': '#fbf1c7',
+  
+  '--color-user-select-bg': '#fabd2f',
+  '--color-user-select-text': '#282828',
+  
+  '--color-warn': '#fb4934',
+  
+  '--color-md-blockquote-border': '',
+  '--color-md-blockquote-text': '#fbf1c7',
+  
+  '--color-md-code-bg': '#d65d0e',
+  '--color-md-code-text': '#282828',
+  
+  '--color-md-link-text': '#fbf1c7',
+  '--color-md-list-text': '#fbf1c7',
+  
+  '--color-md-mention-bg': '',
+  '--color-md-mention-text': '#458588', 
+  
+  '--color-md-pre-bg': '#504945',
+  '--color-md-pre-border': '',
+  '--color-md-pre-mention-bg': '',
+  '--color-md-pre-mention-text': '#458588',
+  '--color-md-pre-text': '',
+  
+  '--shadow-header': '',
+  '--shadow-footer': '',
+  '--shadow-modal': '',
+};
+const el = document.documentElement;
+
+for (const style in styles) {
+  el.style.setProperty(style, styles[style] || undefined);
+}
